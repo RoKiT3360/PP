@@ -21,7 +21,7 @@ export default function Header() {
           </a>
         </div>
         <div className="relative flex flex-col justify-center items-center h-full">
-          <div className="w-[126px] h-full flex items-center justify-center gap-5">
+          <div className="w-[126px] h-full flex items-center justify-center gap-5 text-black">
             <div className="group" onClick={toggleDropdown}>
               <button>
                 BUY <FontAwesomeIcon icon={faArrowDown} />
@@ -50,7 +50,7 @@ export default function Header() {
           </div>
         </div>
         <div className="flex items-center">
-          <button className="border border-blue-200 rounded-full px-5 h-[37px] cursor-pointer flex justify-center items-center">Log in</button>
+          <button className="border border-blue-200 rounded-full px-5 h-[37px] cursor-pointer flex justify-center items-center text-blue-700">Log in</button>
           <button className="bg-blue-600 rounded-full px-5 text-white h-[37px] cursor-pointer flex justify-center items-center">Sign up</button>
         </div>
       </div>

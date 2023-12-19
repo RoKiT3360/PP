@@ -7,6 +7,7 @@ import { faChessKnight, faFlag, faPlayCircle, faSoccerBall } from "@fortawesome/
 import { faFontAwesomeFlag } from "@fortawesome/free-brands-svg-icons";
 import Header from '@/components/header'
 import Body from '@/components/body';
+import Footer from '@/components/footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function Home() {
     <div>
       <Header></Header>
       <Body></Body>
+      <Footer></Footer>
     </div>
   )
 }
