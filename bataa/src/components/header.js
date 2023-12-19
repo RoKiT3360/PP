@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div className="w-full h-[72px] bg-white flex justify-center">
       <div className="w-[70%] h-full flex justify-between">
-        <div className="w-[136px] h-[43px]">
+        <div className="w-[136px] h-[43px] hidden sm:flex">
           <a href="./">
             <img
               src="https://logos-world.net/wp-content/uploads/2020/07/PayPal-Logo.png"
@@ -21,7 +21,7 @@ export default function Header() {
           </a>
         </div>
         <div className="relative flex flex-col justify-center items-center h-full">
-          <div className="w-[126px] h-full flex items-center justify-center gap-5">
+          <div className="w-[100px] sm:w-[126px] h-full flex items-center justify-center gap-5 sm:text-sm text-xs">
             <div className="group" onClick={toggleDropdown}>
               <button>
                 BUY <FontAwesomeIcon icon={faArrowDown} />
@@ -34,9 +34,9 @@ export default function Header() {
             </div>
           </div>
           <div className={`w-screen h-[100px] bg-blue-700 flex absolute top-[72px] justify-around items-center ${isDropdownOpen ? '' : 'hidden'}`} id="dropdown">
-            <div className="flex gap-[100px]">
+            <div className="flex gap-3 sm:gap-[100px]">
               <div className="flex flex-col gap-4 text-white">
-                <a className="hover:underline-offset-4 hover:underline" href="./">Pay on Ebay</a>
+                <a className="hover:underline-offset-4 hover:underline" href="./irsh">Pay on Ebay</a>
                 <a className="hover:underline-offset-4 hover:underline" href="./">Pay on websites</a>
               </div>
               <div className="flex flex-col gap-4 text-white">
@@ -45,13 +45,13 @@ export default function Header() {
               </div>
             </div>
             <div>
-              <FontAwesomeIcon icon={faXmark} color="white" onClick={toggleDropdown} />
+              <FontAwesomeIcon icon={faXmark} color="white" className="cursor-pointer" onClick={toggleDropdown} />
             </div>
           </div>
         </div>
         <div className="flex items-center">
-          <button className="border border-blue-200 rounded-full px-5 h-[37px] cursor-pointer flex justify-center items-center">Log in</button>
-          <button className="bg-blue-600 rounded-full px-5 text-white h-[37px] cursor-pointer flex justify-center items-center">Sign up</button>
+          <button className="border border-blue-200 rounded-full px-5 h-[37px] cursor-pointer text-xs sm:text-sm flex justify-center items-center">Log in</button>
+          <button className="bg-blue-600 rounded-full px-5 text-white h-[37px] cursor-pointer text-xs sm:text-sm flex justify-center items-center">Sign up</button>
         </div>
       </div>
     </div>
