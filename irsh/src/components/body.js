@@ -77,7 +77,7 @@ export default function Body() {
         </div>
       </div>
       <div className="w-full bg-slate-600 h-[40vh] flex justify-center items-center flex-col gap-3">
-        <p className="text-3xl">Whatever it is - you can get it.</p>
+        <p className="text-3xl sm:text-left text-center ">Whatever it is - you can get it.</p>
         <button className="px-[80px] py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-white">
           Shop on eBay
         </button>
